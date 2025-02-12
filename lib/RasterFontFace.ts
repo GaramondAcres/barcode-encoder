@@ -3,10 +3,11 @@
  * See the LICENSE file in the root of the repository for details.
  */
 
-import { decode } from "https://deno.land/std@0.134.0/encoding/base64.ts";
+import { decodeBase64 } from "../std/base64.ts";
+
 import { Canvas } from "./Canvas.ts";
 
-export default class RasterFontFace {
+export class RasterFontFace {
   characterWidths: Array<number>;
   characterMaxWidth: number;
   characterHeight: number;
@@ -15,7 +16,7 @@ export default class RasterFontFace {
   constructor(image: Canvas) {
     this.characterWidths = ((CharacterWidthsEncoded) => {
       const array = [];
-      const CharacterWidthsDecoded = decode(CharacterWidthsEncoded);
+      const CharacterWidthsDecoded = decodeBase64(CharacterWidthsEncoded);
       for (let i = 0; i < CharacterWidthsDecoded.length; i++) {
         array.push(CharacterWidthsDecoded[i] * 2);
       }
