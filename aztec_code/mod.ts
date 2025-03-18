@@ -319,6 +319,10 @@ export class AztecCode {
     );
   }
 
+  public getEdgeLength() {
+    return 2 * this.moduleCanvas.centerPosition + 1;
+  }
+
   public getCoords(): Coord[] {
     return this.moduleCanvas.getCoords();
   }
