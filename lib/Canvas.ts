@@ -151,8 +151,6 @@ export class Canvas {
   }
 
   drawSquare(coord: { x: number; y: number }, edgeLength: number) {
-    console.log({ coord, edgeLength });
-
     for (let j = edgeLength; j--;) {
       const dY = j + coord.y;
       for (let k = edgeLength; k--;) {

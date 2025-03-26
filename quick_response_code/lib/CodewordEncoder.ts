@@ -115,7 +115,6 @@ export class CodewordEncoder {
     }
 
     if (codewords.length > codewordCount) {
-      console.error("Too many codewords");
       return [];
     }
 
