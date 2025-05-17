@@ -29,7 +29,7 @@ export class DataMatrix {
     const codewordEncoder = (new CodewordEncoder())
       .appendSegment((new TextEncoder()).encode(data), mode);
 
-    // Find the symbol size that can accomodate the data
+    // Find the symbol size that can accommodate the data
 
     let l = SymbolSizes[0].length - 1;
     for (; l > 0; l--) {
