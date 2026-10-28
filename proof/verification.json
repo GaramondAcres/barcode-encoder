@@ -1,0 +1,1057 @@
+{
+  "sourceCommit": "55aa1da55456318be29a125d7c48ad1c0772184c",
+  "decoder": "zxing-cpp",
+  "decoderVersion": "2.3.0",
+  "pillowVersion": "11.3.0",
+  "cases": [
+    {
+      "id": "qr",
+      "expected": "roundtrip",
+      "format": "QR Code",
+      "input": "ABC123",
+      "decoded": [
+        {
+          "format": "BarcodeFormat.QRCode",
+          "text": "ABC123",
+          "bytes": [
+            65,
+            66,
+            67,
+            49,
+            50,
+            51
+          ]
+        }
+      ],
+      "pixelsMatch": true,
+      "sha256Match": true,
+      "roundtrip": true,
+      "passed": true
+    },
+    {
+      "id": "data-matrix",
+      "expected": "roundtrip",
+      "format": "Data Matrix",
+      "input": "ABC123",
+      "decoded": [
+        {
+          "format": "BarcodeFormat.DataMatrix",
+          "text": "ABC123",
+          "bytes": [
+            65,
+            66,
+            67,
+            49,
+            50,
+            51
+          ]
+        }
+      ],
+      "pixelsMatch": true,
+      "sha256Match": true,
+      "roundtrip": true,
+      "passed": true
+    },
+    {
+      "id": "aztec",
+      "expected": "roundtrip",
+      "format": "Aztec",
+      "input": "ABC123",
+      "decoded": [
+        {
+          "format": "BarcodeFormat.Aztec",
+          "text": "ABC123",
+          "bytes": [
+            65,
+            66,
+            67,
+            49,
+            50,
+            51
+          ]
+        }
+      ],
+      "pixelsMatch": true,
+      "sha256Match": true,
+      "roundtrip": true,
+      "passed": true
+    },
+    {
+      "id": "dm-ascii",
+      "expected": "roundtrip",
+      "format": "Data Matrix",
+      "input": "ABC123",
+      "decoded": [
+        {
+          "format": "BarcodeFormat.DataMatrix",
+          "text": "ABC123",
+          "bytes": [
+            65,
+            66,
+            67,
+            49,
+            50,
+            51
+          ]
+        }
+      ],
+      "pixelsMatch": true,
+      "sha256Match": true,
+      "roundtrip": true,
+      "passed": true
+    },
+    {
+      "id": "dm-text",
+      "expected": "roundtrip",
+      "format": "Data Matrix",
+      "input": "abc123",
+      "decoded": [
+        {
+          "format": "BarcodeFormat.DataMatrix",
+          "text": "abc123",
+          "bytes": [
+            97,
+            98,
+            99,
+            49,
+            50,
+            51
+          ]
+        }
+      ],
+      "pixelsMatch": true,
+      "sha256Match": true,
+      "roundtrip": true,
+      "passed": true
+    },
+    {
+      "id": "dm-x12",
+      "expected": "roundtrip",
+      "format": "Data Matrix",
+      "input": "ABC123",
+      "decoded": [
+        {
+          "format": "BarcodeFormat.DataMatrix",
+          "text": "ABC123",
+          "bytes": [
+            65,
+            66,
+            67,
+            49,
+            50,
+            51
+          ]
+        }
+      ],
+      "pixelsMatch": true,
+      "sha256Match": true,
+      "roundtrip": true,
+      "passed": true
+    },
+    {
+      "id": "qr-byte",
+      "expected": "roundtrip",
+      "format": "QR Code",
+      "input": "abc123",
+      "decoded": [
+        {
+          "format": "BarcodeFormat.QRCode",
+          "text": "abc123",
+          "bytes": [
+            97,
+            98,
+            99,
+            49,
+            50,
+            51
+          ]
+        }
+      ],
+      "pixelsMatch": true,
+      "sha256Match": true,
+      "roundtrip": true,
+      "passed": true
+    },
+    {
+      "id": "qr-v2",
+      "expected": "roundtrip",
+      "format": "QR Code",
+      "input": "ABC123",
+      "decoded": [
+        {
+          "format": "BarcodeFormat.QRCode",
+          "text": "ABC123",
+          "bytes": [
+            65,
+            66,
+            67,
+            49,
+            50,
+            51
+          ]
+        }
+      ],
+      "pixelsMatch": true,
+      "sha256Match": true,
+      "roundtrip": true,
+      "passed": true
+    },
+    {
+      "id": "qr-v4",
+      "expected": "roundtrip",
+      "format": "QR Code",
+      "input": "ABC123",
+      "decoded": [
+        {
+          "format": "BarcodeFormat.QRCode",
+          "text": "ABC123",
+          "bytes": [
+            65,
+            66,
+            67,
+            49,
+            50,
+            51
+          ]
+        }
+      ],
+      "pixelsMatch": true,
+      "sha256Match": true,
+      "roundtrip": true,
+      "passed": true
+    },
+    {
+      "id": "qr-v7",
+      "expected": "roundtrip",
+      "format": "QR Code",
+      "input": "ABC123",
+      "decoded": [
+        {
+          "format": "BarcodeFormat.QRCode",
+          "text": "ABC123",
+          "bytes": [
+            65,
+            66,
+            67,
+            49,
+            50,
+            51
+          ]
+        }
+      ],
+      "pixelsMatch": true,
+      "sha256Match": true,
+      "roundtrip": true,
+      "passed": true
+    },
+    {
+      "id": "qr-v10",
+      "expected": "roundtrip",
+      "format": "QR Code",
+      "input": "ABC123",
+      "decoded": [
+        {
+          "format": "BarcodeFormat.QRCode",
+          "text": "ABC123",
+          "bytes": [
+            65,
+            66,
+            67,
+            49,
+            50,
+            51
+          ]
+        }
+      ],
+      "pixelsMatch": true,
+      "sha256Match": true,
+      "roundtrip": true,
+      "passed": true
+    },
+    {
+      "id": "qr-v14",
+      "expected": "roundtrip",
+      "format": "QR Code",
+      "input": "ABC123",
+      "decoded": [
+        {
+          "format": "BarcodeFormat.QRCode",
+          "text": "ABC123",
+          "bytes": [
+            65,
+            66,
+            67,
+            49,
+            50,
+            51
+          ]
+        }
+      ],
+      "pixelsMatch": true,
+      "sha256Match": true,
+      "roundtrip": true,
+      "passed": true
+    },
+    {
+      "id": "qr-mask-0",
+      "expected": "roundtrip",
+      "format": "QR Code",
+      "input": "ABC123",
+      "decoded": [
+        {
+          "format": "BarcodeFormat.QRCode",
+          "text": "ABC123",
+          "bytes": [
+            65,
+            66,
+            67,
+            49,
+            50,
+            51
+          ]
+        }
+      ],
+      "pixelsMatch": true,
+      "sha256Match": true,
+      "roundtrip": true,
+      "passed": true
+    },
+    {
+      "id": "qr-mask-1",
+      "expected": "roundtrip",
+      "format": "QR Code",
+      "input": "ABC123",
+      "decoded": [
+        {
+          "format": "BarcodeFormat.QRCode",
+          "text": "ABC123",
+          "bytes": [
+            65,
+            66,
+            67,
+            49,
+            50,
+            51
+          ]
+        }
+      ],
+      "pixelsMatch": true,
+      "sha256Match": true,
+      "roundtrip": true,
+      "passed": true
+    },
+    {
+      "id": "qr-mask-2",
+      "expected": "roundtrip",
+      "format": "QR Code",
+      "input": "ABC123",
+      "decoded": [
+        {
+          "format": "BarcodeFormat.QRCode",
+          "text": "ABC123",
+          "bytes": [
+            65,
+            66,
+            67,
+            49,
+            50,
+            51
+          ]
+        }
+      ],
+      "pixelsMatch": true,
+      "sha256Match": true,
+      "roundtrip": true,
+      "passed": true
+    },
+    {
+      "id": "qr-mask-3",
+      "expected": "roundtrip",
+      "format": "QR Code",
+      "input": "ABC123",
+      "decoded": [
+        {
+          "format": "BarcodeFormat.QRCode",
+          "text": "ABC123",
+          "bytes": [
+            65,
+            66,
+            67,
+            49,
+            50,
+            51
+          ]
+        }
+      ],
+      "pixelsMatch": true,
+      "sha256Match": true,
+      "roundtrip": true,
+      "passed": true
+    },
+    {
+      "id": "qr-mask-4",
+      "expected": "roundtrip",
+      "format": "QR Code",
+      "input": "ABC123",
+      "decoded": [
+        {
+          "format": "BarcodeFormat.QRCode",
+          "text": "ABC123",
+          "bytes": [
+            65,
+            66,
+            67,
+            49,
+            50,
+            51
+          ]
+        }
+      ],
+      "pixelsMatch": true,
+      "sha256Match": true,
+      "roundtrip": true,
+      "passed": true
+    },
+    {
+      "id": "qr-mask-5",
+      "expected": "roundtrip",
+      "format": "QR Code",
+      "input": "ABC123",
+      "decoded": [
+        {
+          "format": "BarcodeFormat.QRCode",
+          "text": "ABC123",
+          "bytes": [
+            65,
+            66,
+            67,
+            49,
+            50,
+            51
+          ]
+        }
+      ],
+      "pixelsMatch": true,
+      "sha256Match": true,
+      "roundtrip": true,
+      "passed": true
+    },
+    {
+      "id": "qr-mask-6",
+      "expected": "roundtrip",
+      "format": "QR Code",
+      "input": "ABC123",
+      "decoded": [
+        {
+          "format": "BarcodeFormat.QRCode",
+          "text": "ABC123",
+          "bytes": [
+            65,
+            66,
+            67,
+            49,
+            50,
+            51
+          ]
+        }
+      ],
+      "pixelsMatch": true,
+      "sha256Match": true,
+      "roundtrip": true,
+      "passed": true
+    },
+    {
+      "id": "qr-mask-7",
+      "expected": "roundtrip",
+      "format": "QR Code",
+      "input": "ABC123",
+      "decoded": [
+        {
+          "format": "BarcodeFormat.QRCode",
+          "text": "ABC123",
+          "bytes": [
+            65,
+            66,
+            67,
+            49,
+            50,
+            51
+          ]
+        }
+      ],
+      "pixelsMatch": true,
+      "sha256Match": true,
+      "roundtrip": true,
+      "passed": true
+    },
+    {
+      "id": "dm-regions",
+      "expected": "roundtrip",
+      "format": "Data Matrix",
+      "input": "ABC123ABC123ABC123ABC123ABC123ABC123ABC123ABC123ABC123ABC123ABC123ABC123",
+      "decoded": [
+        {
+          "format": "BarcodeFormat.DataMatrix",
+          "text": "ABC123ABC123ABC123ABC123ABC123ABC123ABC123ABC123ABC123ABC123ABC123ABC123",
+          "bytes": [
+            65,
+            66,
+            67,
+            49,
+            50,
+            51,
+            65,
+            66,
+            67,
+            49,
+            50,
+            51,
+            65,
+            66,
+            67,
+            49,
+            50,
+            51,
+            65,
+            66,
+            67,
+            49,
+            50,
+            51,
+            65,
+            66,
+            67,
+            49,
+            50,
+            51,
+            65,
+            66,
+            67,
+            49,
+            50,
+            51,
+            65,
+            66,
+            67,
+            49,
+            50,
+            51,
+            65,
+            66,
+            67,
+            49,
+            50,
+            51,
+            65,
+            66,
+            67,
+            49,
+            50,
+            51,
+            65,
+            66,
+            67,
+            49,
+            50,
+            51,
+            65,
+            66,
+            67,
+            49,
+            50,
+            51,
+            65,
+            66,
+            67,
+            49,
+            50,
+            51
+          ]
+        }
+      ],
+      "pixelsMatch": true,
+      "sha256Match": true,
+      "roundtrip": true,
+      "passed": true
+    },
+    {
+      "id": "aztec-lower",
+      "expected": "roundtrip",
+      "format": "Aztec",
+      "input": "abc123",
+      "decoded": [
+        {
+          "format": "BarcodeFormat.Aztec",
+          "text": "abc123",
+          "bytes": [
+            97,
+            98,
+            99,
+            49,
+            50,
+            51
+          ]
+        }
+      ],
+      "pixelsMatch": true,
+      "sha256Match": true,
+      "roundtrip": true,
+      "passed": true
+    },
+    {
+      "id": "aztec-full",
+      "expected": "roundtrip",
+      "format": "Aztec",
+      "input": "ABC123ABC123ABC123ABC123ABC123ABC123ABC123ABC123ABC123ABC123ABC123ABC123ABC123ABC123ABC123ABC123ABC123ABC123ABC123ABC123ABC123ABC123ABC123ABC123ABC123ABC123ABC123ABC123ABC123ABC123ABC123ABC123ABC123ABC123ABC123ABC123ABC123ABC123ABC123ABC123ABC123ABC123ABC123ABC123ABC123ABC123ABC123ABC123ABC123ABC123ABC123ABC123ABC123ABC123ABC123ABC123ABC123ABC123ABC123ABC123",
+      "decoded": [
+        {
+          "format": "BarcodeFormat.Aztec",
+          "text": "ABC123ABC123ABC123ABC123ABC123ABC123ABC123ABC123ABC123ABC123ABC123ABC123ABC123ABC123ABC123ABC123ABC123ABC123ABC123ABC123ABC123ABC123ABC123ABC123ABC123ABC123ABC123ABC123ABC123ABC123ABC123ABC123ABC123ABC123ABC123ABC123ABC123ABC123ABC123ABC123ABC123ABC123ABC123ABC123ABC123ABC123ABC123ABC123ABC123ABC123ABC123ABC123ABC123ABC123ABC123ABC123ABC123ABC123ABC123ABC123",
+          "bytes": [
+            65,
+            66,
+            67,
+            49,
+            50,
+            51,
+            65,
+            66,
+            67,
+            49,
+            50,
+            51,
+            65,
+            66,
+            67,
+            49,
+            50,
+            51,
+            65,
+            66,
+            67,
+            49,
+            50,
+            51,
+            65,
+            66,
+            67,
+            49,
+            50,
+            51,
+            65,
+            66,
+            67,
+            49,
+            50,
+            51,
+            65,
+            66,
+            67,
+            49,
+            50,
+            51,
+            65,
+            66,
+            67,
+            49,
+            50,
+            51,
+            65,
+            66,
+            67,
+            49,
+            50,
+            51,
+            65,
+            66,
+            67,
+            49,
+            50,
+            51,
+            65,
+            66,
+            67,
+            49,
+            50,
+            51,
+            65,
+            66,
+            67,
+            49,
+            50,
+            51,
+            65,
+            66,
+            67,
+            49,
+            50,
+            51,
+            65,
+            66,
+            67,
+            49,
+            50,
+            51,
+            65,
+            66,
+            67,
+            49,
+            50,
+            51,
+            65,
+            66,
+            67,
+            49,
+            50,
+            51,
+            65,
+            66,
+            67,
+            49,
+            50,
+            51,
+            65,
+            66,
+            67,
+            49,
+            50,
+            51,
+            65,
+            66,
+            67,
+            49,
+            50,
+            51,
+            65,
+            66,
+            67,
+            49,
+            50,
+            51,
+            65,
+            66,
+            67,
+            49,
+            50,
+            51,
+            65,
+            66,
+            67,
+            49,
+            50,
+            51,
+            65,
+            66,
+            67,
+            49,
+            50,
+            51,
+            65,
+            66,
+            67,
+            49,
+            50,
+            51,
+            65,
+            66,
+            67,
+            49,
+            50,
+            51,
+            65,
+            66,
+            67,
+            49,
+            50,
+            51,
+            65,
+            66,
+            67,
+            49,
+            50,
+            51,
+            65,
+            66,
+            67,
+            49,
+            50,
+            51,
+            65,
+            66,
+            67,
+            49,
+            50,
+            51,
+            65,
+            66,
+            67,
+            49,
+            50,
+            51,
+            65,
+            66,
+            67,
+            49,
+            50,
+            51,
+            65,
+            66,
+            67,
+            49,
+            50,
+            51,
+            65,
+            66,
+            67,
+            49,
+            50,
+            51,
+            65,
+            66,
+            67,
+            49,
+            50,
+            51,
+            65,
+            66,
+            67,
+            49,
+            50,
+            51,
+            65,
+            66,
+            67,
+            49,
+            50,
+            51,
+            65,
+            66,
+            67,
+            49,
+            50,
+            51,
+            65,
+            66,
+            67,
+            49,
+            50,
+            51,
+            65,
+            66,
+            67,
+            49,
+            50,
+            51,
+            65,
+            66,
+            67,
+            49,
+            50,
+            51,
+            65,
+            66,
+            67,
+            49,
+            50,
+            51,
+            65,
+            66,
+            67,
+            49,
+            50,
+            51,
+            65,
+            66,
+            67,
+            49,
+            50,
+            51,
+            65,
+            66,
+            67,
+            49,
+            50,
+            51,
+            65,
+            66,
+            67,
+            49,
+            50,
+            51,
+            65,
+            66,
+            67,
+            49,
+            50,
+            51,
+            65,
+            66,
+            67,
+            49,
+            50,
+            51,
+            65,
+            66,
+            67,
+            49,
+            50,
+            51,
+            65,
+            66,
+            67,
+            49,
+            50,
+            51,
+            65,
+            66,
+            67,
+            49,
+            50,
+            51,
+            65,
+            66,
+            67,
+            49,
+            50,
+            51,
+            65,
+            66,
+            67,
+            49,
+            50,
+            51,
+            65,
+            66,
+            67,
+            49,
+            50,
+            51,
+            65,
+            66,
+            67,
+            49,
+            50,
+            51,
+            65,
+            66,
+            67,
+            49,
+            50,
+            51,
+            65,
+            66,
+            67,
+            49,
+            50,
+            51,
+            65,
+            66,
+            67,
+            49,
+            50,
+            51,
+            65,
+            66,
+            67,
+            49,
+            50,
+            51,
+            65,
+            66,
+            67,
+            49,
+            50,
+            51,
+            65,
+            66,
+            67,
+            49,
+            50,
+            51
+          ]
+        }
+      ],
+      "pixelsMatch": true,
+      "sha256Match": true,
+      "roundtrip": true,
+      "passed": true
+    },
+    {
+      "id": "qr-overflow",
+      "expected": "known-limitation",
+      "format": "QR Code",
+      "input": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+      "decoded": [],
+      "pixelsMatch": true,
+      "sha256Match": true,
+      "roundtrip": false,
+      "passed": false
+    },
+    {
+      "id": "dm-unicode-ascii",
+      "expected": "known-limitation",
+      "format": "Data Matrix",
+      "input": "\u00e9",
+      "decoded": [
+        {
+          "format": "BarcodeFormat.DataMatrix",
+          "text": "C)",
+          "bytes": [
+            67,
+            41
+          ]
+        }
+      ],
+      "pixelsMatch": true,
+      "sha256Match": true,
+      "roundtrip": false,
+      "passed": false
+    },
+    {
+      "id": "dm-exported-enum",
+      "expected": "known-limitation",
+      "format": "Data Matrix",
+      "input": "ABC123",
+      "decoded": [],
+      "pixelsMatch": true,
+      "sha256Match": true,
+      "roundtrip": false,
+      "passed": false
+    },
+    {
+      "id": "dm-x12-loss",
+      "expected": "known-limitation",
+      "format": "Data Matrix",
+      "input": "AB?123",
+      "decoded": [
+        {
+          "format": "BarcodeFormat.DataMatrix",
+          "text": "AB 123",
+          "bytes": [
+            65,
+            66,
+            32,
+            49,
+            50,
+            51
+          ]
+        }
+      ],
+      "pixelsMatch": true,
+      "sha256Match": true,
+      "roundtrip": false,
+      "passed": false
+    },
+    {
+      "id": "aztec-unicode",
+      "expected": "known-limitation",
+      "format": "Aztec",
+      "input": "\u20ac",
+      "decoded": [],
+      "pixelsMatch": true,
+      "sha256Match": true,
+      "roundtrip": false,
+      "passed": false
+    }
+  ]
+}
